@@ -31,8 +31,6 @@ $y_{effective} = y_{op} + n_m \times (y_{ideal} - y_{op})$
 
 HTML: 계산기 인터페이스
 
-JavaScript (ES6 Modules):
-    모든 핵심 계산 로직 (이진 탐색, 선형 보간, 조작선 계산)
-    DOM 조작 및 이벤트 처리
+JavaScript (ES6 Modules): 모든 핵심 계산 로직 (이진 탐색, 선형 보간, 조작선 계산), DOM 조작 및 이벤트 처리
 
 reference: https://duncan.cbe.cornell.edu/Graphs/Chp4graphs/4-19.pdf (물-메탄올 이성분 equilibrium line 작도에 사용)
