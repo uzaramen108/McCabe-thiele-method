@@ -1,4 +1,4 @@
-#McCabe-Thiele-Method
+**McCabe-Thiele-Method**
 
 JavaScript로 구현한 McCabe-Thiele 증류탑 계산기입니다. 
 
@@ -6,13 +6,13 @@ JavaScript로 구현한 McCabe-Thiele 증류탑 계산기입니다.
 
 <img width="2174" height="1439" alt="image" src="https://github.com/user-attachments/assets/24295ae3-6ac9-4594-95e7-f2540fdbb1bb" />
 
-#주요 기능
+**주요 기능**
 
 이성분계(메탄올-물) 증류탑의 McCabe-Thiele 작도 시각화q-line, 정류부 조작선(ESOL), 탈거부 조작선(SSOL), 핀치 포인트(Pinch Point)를 이용한 최소 환류비($R_{min}$) 자동 계산
 
 머피 효율($n_m$)을 적용한 유효 평형 곡선(Effective Equilibrium Curve) 생성유효 평형 곡선을 기준으로 스테핑하여 실제 단수($N_{actual}$) 계산
 
-#핵심 작동 원리
+**핵심 작동 원리**
 
 이 계산기는 사용자가 입력한 값(xd, xb, zf, q, R/Rmin)을 바탕으로 최소 환류비($R_{min}$)와 실제 조작선(ESOL, SSOL)을 계산합니다.
 
@@ -27,7 +27,7 @@ $y_{effective} = y_{op} + n_m \times (y_{ideal} - y_{op})$
 이후, 단수 계산(Stepping)은 본래의 이상 평형 곡선이 아닌, 이 유효 평형 곡선을 기준으로 수행하여 실제와 더 가까운 단수를 도출합니다.
 
 
-#사용한 기술
+**사용한 기술**
 
 HTML: 계산기 인터페이스
 
