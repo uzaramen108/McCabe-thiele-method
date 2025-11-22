@@ -29,7 +29,7 @@ export class Variable {
      * @returns {boolean} - 모든 값이 유효하면 true, 아니면 false
      */
     validate() {
-        const allValues = [this.xd, this.xb, this.zf, this.q, this.r_factor, this.nm];
+        const allValues = [this.xd, this.xb, this.zf, this.q, this.r_factor, this.nm, this.sc];
         if (allValues.some(val => isNaN(val))) {
             console.error("입력값 오류: 일부 값이 숫자가 아닙니다 (NaN).", this);
             alert("유효하지 않은 입력값이 있습니다. 숫자만 입력해주세요.");
