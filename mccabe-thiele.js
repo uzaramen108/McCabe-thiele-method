@@ -113,7 +113,6 @@ export function calculateMcCabeThiele(variables) {
     results.R_min = r_min_slope / (1 - r_min_slope); // 최소 환류비
     
     results.R = results.R_min * r_factor; // 실제 환류비
-    const R = results.R;
 
     let R_internal = results.R;
 
