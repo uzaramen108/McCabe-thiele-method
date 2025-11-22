@@ -11,6 +11,7 @@ export class Variable {
     q;
     r_factor;
     nm;
+    sc;
 
     constructor() {
         // Used parseFloat() for shifting string(.value) to number
@@ -20,7 +21,7 @@ export class Variable {
         this.q = parseFloat(document.getElementById('q').value);
         this.r_factor = parseFloat(document.getElementById('r_factor').value);
         this.nm = parseFloat(document.getElementById('nm').value);
-        
+        this.sc = parseFloat(document.getElementById('sub_cooling').value);
         this.validate();
     }
 
