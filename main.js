@@ -45,11 +45,10 @@ function renderResults(results, floatStageNum) {
     실제 환류비 (R)       : ${results.R.toFixed(3)} (R_min의 ${document.getElementById("r_factor").value}배)
     
     총 이론 단 수 (Stages): ${results.stages}(${floatStageNum.toFixed(1)}) 단
-    최적 공급 단 (Feed @) : ${results.feed_stage} 번째 단 (from top)
-    
-    (목표 하부 조성: ${document.getElementById("xb").value})
-    `;
-  resultsTextElement.textContent = outputText; //실제 하부 조성 (xb_actual): ${results.xb_actual.toFixed(5)}
+    최적 공급 단 (Feed @) : ${results.feed_stage} 번째 단 (from top)`;
+  resultsTextElement.textContent = outputText; 
+  //실제 하부 조성 (xb_actual): ${results.xb_actual.toFixed(5)}
+  //목표 하부 조성: ${document.getElementById("xb").value})   
 }
 
 /**
