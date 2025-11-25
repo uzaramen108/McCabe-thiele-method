@@ -1,0 +1,23 @@
+{
+  "name": "macabe_thiele_method",
+  "version": "1.0.0",
+  "description": "Mccabe-Thiele method with murphree efficiency at water-methanol distillation",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uzaramen108/McCabe-thiele-method.git"
+  },
+  "author": "uzaramen108",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uzaramen108/McCabe-thiele-method/issues"
+  },
+  "homepage": "https://github.com/uzaramen108/McCabe-thiele-method#readme",
+  "dependencies": {
+    "prettier": "^3.6.2"
+  }
+}
