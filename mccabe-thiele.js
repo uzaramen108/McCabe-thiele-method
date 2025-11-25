@@ -133,11 +133,11 @@ export function calculateMcCabeThiele(variables) {
 
   const CP_LIQUID = 81.6; // 메탄올 액체 열용량 (J/mol·K)
   const LATENT_HEAT = 35270; // 메탄올 기화 잠열 (J/mol)
-  const DELTA_T = 0; //sc; // 과냉각 온도 5K (가정)
+  const DELTA_T = sc; //sc; // 과냉각 온도 5K (가정)
 
   // 과냉각 보정 계수 (F > 1)
   // 차가운 환류가 증기를 추가 응축시켜 내부 유량을 증가시킴
-  const F_factor = 1 + (CP_LIQUID * DELTA_T) / LATENT_HEAT;
+  const F_factor = 1 + (CP_LIQUID * DELTA_T) / LATENT_HEAT; // 엔탈피 수지식을 토대로 구함
 
   // 조작선 그리기용 '내부 환류비' 갱신
   R_internal = results.R * F_factor;
